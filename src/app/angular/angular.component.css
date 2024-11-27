@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* For consistent sizing */
+  }
+  
+  a {
+    text-decoration: none;
+    outline: none;
+    border: none;  
+    color: rgb(78, 9, 142) 
+  }
+  
+  .body-maininfo {
+    display: flex;
+  }
+  
+  .infolinks {
+    width: 25%;
+    background-color: lightblue;
+    overflow: auto;
+  }
+  
+  .infolinksbody {
+    width: 75%; /* Adjusted width to complement .infolinks */
+  }
+  
+  .subheader-main {
+    background-color: lightblue;
+    height: 700px;
+    overflow-y: auto; /* Add scrolling if content overflows vertically */
+  }
+  
+  .sub-header-box {
+    padding: 10px; /* Added padding for spacing */
+    text-align: center; /* Center-align the content */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Focus and hover effect applied to the entire box */
+  .sub-header-box:hover,
+  .sub-header-box:focus-within {
+    background-color: rgb(202, 202, 202);
+    outline: none;
+  }
+  
+  .sub-header {
+    font-size: 20px; /* Adjusted font size for consistency */
+    margin: 0; /* Removed unnecessary padding */
+    display: inline-block; /* Ensure inline block behavior */
+  }
+  
