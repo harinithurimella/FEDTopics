@@ -1,0 +1,38 @@
+<div>
+    <h2>Components</h2>
+    <p>
+        Components are the fundamental building block for creating applications in Angular. Angular aims to provide structure for organizing your project into manageable, well organized parts with clear responsibilities so that your code is maintainable and scalable.
+    </p>
+    <p>
+        An Angular component can be identified by the component suffix (e.g., my-custom-name.component.ts)
+    </p>
+    <ul>
+        <li>
+            An HTML template that declares what renders on the page
+        </li>
+        <li>
+            A TypeScript class that defines behavior
+        </li>
+        <li>
+            A CSS selector that defines how the component is used in a template
+            Optionally, CSS styles applied to the template
+        </li>
+    </ul>
+    <h2>Creating a component</h2>
+    <div>To create a component using the Angular CLI:
+        <ol>
+            <li>From a terminal window, navigate to the directory containing your application.</li>
+            <li>Run the ng generate component <i>component-name command,</i> where <i>component-name command,</i> is the name of your new component.</li>
+        </ol>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <textarea #paragraphToCopy></textarea>
+            <button class="btn btn-primary" (click)="copyParagraph(paragraphToCopy)">
+              <i class="bi bi-clipboard"></i> Copy Paragraph
+            </button>
+          </div>
+        </div>
+      </div>
+</div>

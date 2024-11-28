@@ -1,52 +1,73 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* For consistent sizing */
+    box-sizing: border-box;
   }
   
   a {
     text-decoration: none;
     outline: none;
-    border: none;  
-    color: rgb(78, 9, 142) 
+    border: none;
+    color: rgb(78, 9, 142);
   }
   
   .body-maininfo {
     display: flex;
+    margin-top: 50px; /* Pushes the main content below the header */
   }
   
   .infolinks {
-    width: 25%;
+    position: fixed;
+    top: 70px; /* Adjusted to create space below the header */
+    left: 0;
+    width: 25%; /* Sidebar width */
+    height: calc(100vh - 70px); /* Subtracting the space for header and margin */
     background-color: lightblue;
-    overflow: auto;
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-top: 10px; /* Adds extra spacing inside the blue sidebar */
   }
   
   .infolinksbody {
-    width: 75%; /* Adjusted width to complement .infolinks */
+    margin-left: 25%; /* Leaves space for the fixed sidebar */
+    padding: 20px;
+    width: 75%; /* Adjusts to occupy the remaining space */
+    height: calc(100vh - 50px); /* Matches the content height to fit the screen */
+    overflow-y: auto; /* Enables independent scrolling */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjusted header height */
+    background-color: lightblue;
+    z-index: 10; /* Ensures the header is on top of other elements */
+    text-align: center;
+    line-height: 50px; /* Vertically centers text in the header */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
   }
   
   .subheader-main {
-    background-color: lightblue;
-    height: 700px;
-    overflow-y: auto; /* Add scrolling if content overflows vertically */
+    padding: 10px;
   }
   
   .sub-header-box {
-    padding: 10px; /* Added padding for spacing */
-    text-align: center; /* Center-align the content */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
   }
   
-  /* Focus and hover effect applied to the entire box */
   .sub-header-box:hover,
   .sub-header-box:focus-within {
     background-color: rgb(202, 202, 202);
-    outline: none;
   }
   
   .sub-header {
-    font-size: 20px; /* Adjusted font size for consistency */
-    margin: 0; /* Removed unnecessary padding */
-    display: inline-block; /* Ensure inline block behavior */
+    font-size: 16px;
+    margin: 0;
+    display: inline-block;
   }
   

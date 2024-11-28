@@ -2,7 +2,8 @@ import { Routes } from '@angular/router';
 import { AngularComponent } from './angular/angular.component';
 import { HtmlComponent } from './html/html.component';
 import { CssComponent } from './css/css.component';
-import { SubAngularComponent } from './angular/sub-angular/sub-angular.component';
+import { ComponentComponent } from './angular/component/component.component';
+import { AngularinfoComponent } from './angular/angularinfo/angularinfo.component';
 
 export const routes: Routes = [
 
@@ -16,9 +17,9 @@ export const routes: Routes = [
         path: 'angular',
         component: AngularComponent, // Parent Component
         children: [
-          { path: 'whatisFrontend', component:SubAngularComponent },
-          { path: 'whyAngular', component: SubAngularComponent },
-         { path: '', redirectTo: 'whatisFrontend', pathMatch: 'full' }
+            { path: '', redirectTo: 'overview', pathMatch: 'full' },
+          { path: 'overview', component: AngularinfoComponent },
+          {path : 'component' , component : ComponentComponent}
         ]
     }
 ];

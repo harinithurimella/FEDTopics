@@ -1,0 +1,363 @@
+<div id="FrontEnd" class = "content-section" [class.active]="activeFragment === 'FrontEnd'">
+    <h1>What Is FrontEnd</h1>
+    Front-end development is all about creating the visual and interactive parts of a web application that users directly interact with. It involves a mix of design and coding skills, using languages like HTML, CSS, and JavaScript, as well as frameworks and tools that help streamline the development process. The goal is to build applications that are not only visually appealing but also functional, accessible, and performant.
+    
+    <h3>User Interface (UI) Design:</h3>
+    
+    <h4>HTML (HyperText Markup Language):</h4>
+    <p>The standard markup language used to create the structure of web pages. It defines elements such as headings, paragraphs, links, images, and other content.</p>
+  
+    <h4>CSS (Cascading Style Sheets):</h4>
+    <p>A style sheet language used to describe the presentation of a document written in HTML. It controls layout, colors, fonts, spacing, and other visual aspects of a web page.</p>
+    
+    <p><strong>Responsive Design:</strong> Ensuring that the website or application looks and works well on different devices and screen sizes, from desktops to smartphones.</p>
+  
+    <h3>Front-End Technologies and Frameworks:</h3>
+  
+    <h4>JavaScript:</h4>
+    <p>A programming language used to create dynamic and interactive features on web pages. JavaScript can manipulate HTML and CSS, handle events, and make asynchronous requests to servers.</p>
+  
+    <h4>Front-End Frameworks/Libraries:</h4>
+    <p>Tools that simplify and accelerate front-end development. Popular ones include:</p>
+    <ul>
+      <li><strong>React:</strong> A JavaScript library for building user interfaces, maintained by Facebook.</li>
+      <li><strong>Angular:</strong> A framework for building single-page applications, maintained by Google.</li>
+      <li><strong>VueJs:</strong> A progressive framework for building user interfaces, known for its ease of integration and flexibility.</li>
+      <li><strong>Bootstrap:</strong> A front-end framework for developing responsive and mobile-first websites, with pre-designed components and layout utilities.</li>
+    </ul>
+  
+    <h3>Performance Optimization:</h3>
+  
+    <h4>Minification:</h4>
+    <p>Reducing the size of CSS, JavaScript, and HTML files by removing unnecessary characters.</p>
+  
+    <h4>Caching:</h4>
+    <p>Storing frequently accessed resources to speed up load times.</p>
+  
+    <h4>Asynchronous Loading:</h4>
+    <p>Loading JavaScript and other resources in a way that does not block the rendering of the page.</p>
+  
+    <h3>Tooling and Workflow:</h3>
+  
+    <h4>Package Managers:</h4>
+    <p>Tools like npm (Node Package Manager) or yarn are used to manage project dependencies.</p>
+  
+    <h4>Build Tools:</h4>
+    <p>Tools like Webpack or Gulp are used to automate tasks such as bundling JavaScript files, compiling CSS, and optimizing assets.</p>
+  
+    <h4>Version Control:</h4>
+    <p>Systems like Git are used to track changes to code and collaborate with other developers.</p>
+  </div>
+  <div id="whyAngular" class = "content-section" [class.active]="activeFragment === 'whyAngular'">
+    <h1>Why Angular?</h1>
+    <div>
+      <h3>Angular is a web framework that empowers developers to build fast, reliable applications.</h3>
+    </div>
+    <p>Maintained by a dedicated team at Google, Angular provides a broad suite of tools, APIs, and libraries to simplify and streamline your development workflow. Angular gives you a solid platform on which to build fast, reliable applications that scale with both the size of your team and the size of your codebase.</p>
+    <div>
+        Full-Featured: Unlike libraries like React or Vue, Angular is a full-fledged framework. It comes with built-in solutions for routing, forms, HTTP client, state management, and more. This reduces the need to rely on third-party libraries for essential features.
+Opinionated Structure: Angular promotes an organized and modular way of building applications, enforcing best practices and providing a clear structure to follow (such as modules, components, and services).
+    </div>
+    <div>
+        <h3>Two-Way Data Binding</h3>
+Angular provides two-way data binding, which automatically synchronizes data between the model and the view. This makes it easier to manage the state and UI of the application, particularly in complex forms or when dealing with user input.
+    </div>
+    <div>
+        <h3>TypeScript</h3>
+        Angular is built using TypeScript, which provides static typing, better tooling support, and enhanced maintainability, especially for large applications. TypeScript helps catch errors early during development, providing better code quality and easier refactoring.
+TypeScript's support for features like interfaces, decorators, and modules makes it more scalable and maintainable.
+    </div>
+    <h3>When Should We choose Angular ?</h3>
+    <ul>
+        <li>If you are building large-scale applications that require complex logic and interactions.</li>
+        <li>If you need a full-featured framework that includes routing, form handling, HTTP services, and more.</li>
+        <li>If you prefer TypeScript and the static typing benefits it offers.</li>
+        <li>If you need to develop a cross-platform application (e.g., web and mobile).</li>
+    </ul>
+    <p>Angular is an excellent choice when building large-scale, feature-rich applications that need a solid structure, scalability, and robust tooling support. It’s particularly suited for teams that prefer an all-in-one framework with built-in solutions and type safety provided by TypeScript</p>
+  </div>
+  <section id="whatisAngular" class = "content-section" [class.active] = "activeFragment ==='whatisAngular'">
+  <div>
+    <div>
+        <h1>What is Angular ?</h1>
+        Angular is a popular TypeScript-based open-source web application framework developed and maintained by Google. It is designed to build single-page applications (SPAs) where dynamic content is rendered within the browser without reloading the entire page. Angular follows the component-based architecture, making it modular, scalable, and maintainable. Angular is known for being a full-fledged framework, offering a comprehensive set of tools, libraries, and features out of the box to build web, mobile, and desktop applications.
+    </div>
+    <div>
+        <h3>Component-Based Architecture</h3>
+        <ul>
+            <li>Components are the building blocks of Angular applications. They define the logic and templates for specific parts of the UI.</li>
+            <li>Components are encapsulated and reusable.</li>
+            <li>A component consists of:
+                <ul>
+                    <li>HTML Template (View): Defines the structure of the UI.</li>
+                    <li>TypeScript Class (Logic): Contains the logic and data for the component.</li>
+                    <li>CSS/SCSS Styles (Presentation): Defines the look and feel of the component.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Modules</h3>
+        <ul>
+            <li>Angular applications are divided into NgModules, which help organize the application into cohesive blocks of functionality.</li>
+            <li><b>Root Module:</b> Every Angular app has at least one module, typically called the AppModule.</li>
+            <li><b>Feature Modules :</b>Used to separate different areas of the application for better maintainability.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Templates</h3>
+        <ul>
+            <li><b>Structural Directives:</b> Change the DOM structure (e.g., *ngIf, *ngFor).</li>
+            <li><b>Attribute Directives:</b>Change the appearance or behavior of an element (e.g., [ngClass], [ngStyle]).</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Data Binding</h3>
+        Angular supports four types of data binding to connect the UI and application logic:
+        <ul>
+            <li><b>Interpolation:</b> Inserts dynamic values into the DOM.</li>
+            <li><b>Property Binding ([property]):</b> Binds a DOM property to a component property.</li>
+            <li><b>Event Binding ((event)):</b>Responds to user actions like clicks or input changes.</li>
+            <li><b>Two-Way Binding ([(ngModel)]):</b>Combines property and event binding, syncing data between the view and the component.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Dependency Injection (DI)</h3>
+        <div><ul>
+            <li>Angular has a built-in <b>Dependency Injection</b> system to manage services and inject dependencies wherever needed</li>
+            <li>Promotes loose coupling and reusable code.</li>
+        </ul></div>
+    </div>
+    <div>
+        <h3>Directives</h3>
+        <ul>
+            <li>Directives allow you to add behavior to HTML elements or manipulate the DOM programmatically.</li>
+            <li><b>Built-In Directives: </b>*ngIf, *ngFor, *ngSwitch.</li>
+            <li><b>Custom Directives: </b>Developers can create their own directives for specific use cases.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Routing</h3>
+        <ul>
+            <li>Angular includes a Router Module to handle client-side navigation.</li>
+                <li>Features include:</li>
+                <ul>
+                    <li>Defining routes for different views or components.</li>
+                    <li><b>Lazy Loading:</b> Load specific modules only when required to improve performance.</li>
+                    <li><b>Guards: </b> Control access to routes using CanActivate, CanDeactivate, etc.</li> 
+                </ul>
+        </ul>
+    </div>
+    <div>
+        <h3>Forms</h3>
+        Angular provides two approaches for working with forms:
+        <ul>
+            <li><b>Template-Driven Forms:</b> Use directives in templates for form control.</li>
+            <li><b>Reactive Forms:</b>Programmatic approach with a focus on dynamic form building.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Services</h3>
+        <ul>
+            <li>Services in Angular are used to share data, logic, or functions across multiple components.</li>
+            <li>Created as injectable classes and typically used for:</li>
+            <ul>
+                <li>Fetching data from APIs.</li>
+                <li>Managing application state.</li>
+                <li>Handling business logic</li>
+            </ul>
+        </ul>
+    </div>
+    <div>
+        <h3>HTTP Client</h3>
+        <ul>
+            <li>Angular provides the <b>HttpClientModule</b> to make HTTP requests to APIs.</li>
+            <li>Features include:
+                <ul>
+                    <li>Making GET, POST, PUT, DELETE requests.</li>
+                    <li>Handling <b>interceptors </b>for adding headers or logging.</li>
+                    <li>Managing observables with <b>RxJS.</b></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>RxJS (Reactive Extensions for JavaScript)</h3>
+        <ul>
+            RxJS allows you to work with Observables, enabling powerful features like:
+            <li>Angular integrates RxJS to manage asynchronous data streams.</li>
+            <li>Real-time data updates.</li>
+            <li>Event handling.</li>
+            <li>Error handling and retry logic.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Angular CLI (Command Line Interface)</h3>
+<ul>
+    <li>       
+        The Angular CLI simplifies the development process by automating repetitive tasks.
+        Key commands:</li>
+        <ul>
+            <li>ng new for creating a new project.</li>
+            <li>ng generate for creating components, services, modules, etc.</li>
+            <li>ng build for building the project.</li>
+            <li>ng serve for running the development server.</li>
+        </ul>
+</ul>
+    </div>
+    <div>
+        <h3>Testing</h3>
+        <ul>
+            <li>Angular has built-in support for testing:</li>
+            <li><b>  Unit Testing:</b>Using Karma and Jasmine.</li>
+            <li>End-to-End Testing: Using Protractor or alternative tools like Cypress.</li>
+        </ul>
+    </div>
+</div>
+<div>
+    <h3>Cross-Platform Development</h3>
+    <ul>
+        <li>Build Progressive Web Apps (PWA) for a native-like experience on the web.</li>
+        <li>Use Ionic with Angular to create mobile apps.</li>
+        <li>Support for Server-Side Rendering (SSR) with Angular Universal to improve SEO and initial load time.</li>
+    </ul>
+</div>
+<div>
+    <h3>Angular Material</h3>
+    <ul>
+        <li>Angular Material provides a library of reusable UI components based on Google's Material Design</li>
+    </ul>
+</div>
+</section>
+<div class = "table-items">
+    <table>
+        <thead>
+            <th>Feature</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Modules</td>
+            <td>Organize application into cohesive blocks.</td>
+            </tr>
+            
+            <tr>
+            <td>Components</td>
+            <td>Reusable building blocks of the application.</td>
+            </tr>
+    
+            <tr>
+                <td>Templates</td>
+                <td>HTML with embedded Angular directives.</td>
+            </tr>
+            <tr>
+                <td>Directives</td>
+                <td>Directives	Add behavior to HTML elements.</td>
+            </tr>
+            <tr>
+                <td>Services</td>
+                <td>Share logic and data across components.</td>
+            </tr>
+            <tr>
+                <td>Forms</td>
+                <td>Template-driven and Reactive forms for handling user input</td>
+            </tr>
+            <tr>
+                <td>HTTP Client</td>
+                <td>Simplified HTTP requests and API integration.</td>
+            </tr>
+            <tr>
+                <td>RxJS</td>
+                <td>Reactive programming for managing asynchronous data streams</td>
+            </tr>
+            <tr>
+                <td>Angular CLI	</td>
+                <td>Automates project setup, building, testing, and deployment.</td>
+            </tr>
+            <tr>
+                <td>Routing	</td>
+                <td>Navigate between views with ease, supporting lazy loading and guards.</td>
+            </tr>
+            <tr>
+                <td>Angular Material.</td>
+                <td>Pre-built UI components for Material Design</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<section id = "decorators" class = "content-section" [class.active] = "activeFragment ==='decorators'">
+    <div>
+        <div>
+            <h3>What are decorators?</h3>
+            In Angular, decorators are functions that are used to modify the behavior of classes and their members. They provide
+            a way to add metadata or apply transformations to code elements. In Angular, decorators are extensively used to
+            define components, services, directives, pipes, modules, and more.
+            <h3>Types of decorators</h3>
+            <h3>In Angular, there are four main types of decorators-</h3>
+            <ol>
+                <li>
+                    <h3>Class Decorators:</h3>
+                    Class decorators are applied to classes to modify their behavior or metadata. The examples include
+                     Component,  Directive and  NgModule.
+                </li>
+                <li>
+                    <h3>Property Decorators:</h3>
+                    Property decorators are applied to the class properties and are commonly used to modify the properties within the classes. For example,  Input decorator makes a property as an input binding, allowing it to bound to the external data.
+                </li>
+                <li>
+                    <h3>Method Decorators:</h3>
+                    Method decorators are applied to the class methods and modify their behavior or add additional functionalities. For example,  HostListener allows us to listen for events on a method.
+                </li>
+                <li>
+                    <h3>Parameter Decorators</h3>
+                    The Parameter decorators are used for parameters inside class constructors. The parameter decorators provide additional information about constructor parameters. For example, The  Inject decorator allows to specify dependencies for dependency injection.
+                </li>
+            </ol>
+            <div>
+                <h3>Uses of Decorators in Angular</h3>
+                <ul>
+                    <li>
+                        <h3>
+                            Component Configuration:
+                        </h3>
+                        Use  Component to define the metadata of Angular components, including template, styles, and selector.
+                    </li>
+                    <li>
+                        <h3>Service Definition:</h3>
+                        Mark a class with  Injectable to make it injectable as a service throughout the application.
+                    </li>
+                    <li>
+                        <h3>
+                            Directive Behavior: 
+                        </h3>
+                        Implement  Directive to attach custom behavior to elements in the DOM.
+                    </li>
+                    <li>
+                        <h3>
+                            Pipe Transformation:
+                        </h3>
+                        Utilize  Pipe to define custom data transformation logic for templates
+                    </li>
+                    <li>
+                        <h3>Module Organization:</h3>
+                        Use  NgModule to structure Angular modules and manage dependencies
+                    </li>
+                    <li>
+                        <h3>
+                            Input and Output Handling
+                        </h3>
+                        Use  Input and  Output to pass data between parent and child components.
+                    </li>
+                    <li>
+                        <h3>
+                            View Management:
+                        </h3>
+                        Utilize  ViewChild and  ViewChildren to access child components or elements in the view.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  

@@ -1,0 +1,28 @@
+#FrontEnd{
+    margin-top: 30px;
+
+}
+.content-section {
+    padding: 20px; /* Adds padding inside the div */
+    border: 1px solid #ccc; /* Default border for the content block */
+    margin-top: 20px; /* Adds space between blocks */
+    background-color: #f9f9f9; /* Light background for better visibility */
+    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+  }
+  
+  .content-section.active {
+    background-color: #d8e8ff; /* Highlighted background when active */
+    border-color: #007bff; /* Changes border color to blue when active */
+  }
+.table-items{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+}
+.table-items th,  .table-items td{
+    border: 1px solid black; /* Adds borders around individual table cells */
+  padding: 8px; /* Adds some spacing inside table cells */
+  text-align: center; 
+  border-collapse: collapse;
+}

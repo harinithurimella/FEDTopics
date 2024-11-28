@@ -1,20 +1,42 @@
-a{
-    text-decoration: none;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
-
-.main-title{
-     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fixed Header */
+  .main-title {
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width header */
+    height: 64px; /* Header height */
     background-color: blueviolet;
-    height: 64px;
-    z-index: 100;
-
-}
-
-.heading{
-    text-decoration: none;
-    color : white;
-}
+    display: flex; /* Flex layout for header items */
+    justify-content: space-around; /* Spacing between links */
+    align-items: center; /* Vertical alignment */
+    z-index: 1000; /* Ensures it stays above other content */
+  }
+  
+  /* Header Links */
+  .heading {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets text color */
+  }
+  
+  .heading h1 {
+    font-size: 20px;
+    margin: 0; /* Removes extra margin */
+  }
+  
+  /* Content Below the Header */
+  router-outlet {
+    display: block; /* Ensures the outlet is treated as a block-level element */
+  }
+  
+  
